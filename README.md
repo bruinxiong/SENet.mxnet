@@ -11,7 +11,13 @@ This is an illustration of a Squeeze-and-Excitation block.
 
 ![](SE_Block.png)
 
-For any given transformation
+The SE-ResNet module is implemented as followed:
+
+![](SE-ResNet module.png)
+
+The SE-ResNext 50 is implemented following this table:
+
+![](SE-ResNext 50.png)
 
 This MXNet implementation is refered to [taki0112's](https://github.com/taki0112) [tensorflow version](https://github.com/taki0112/SENet-Tensorflow). I also refered a [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py) from [kuangliu](https://github.com/kuangliu). BTW, I add a dropout layer before the last FullyConnected layer. I attach the training code if you want to train your own data with SE-ResNext archetecuture by yourself. 
 
@@ -50,6 +56,7 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 TO BE CONTINUE
 
+SE-Resnet is coming soon.
 Gluon version is coming soon.
 
 #Reference
