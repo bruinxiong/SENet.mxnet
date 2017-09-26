@@ -11,6 +11,7 @@ This is an illustration of a Squeeze-and-Excitation block.
 
 ![](SE_Building_Block.png)
 
+For any given transformation
 
 This MXNet implementation is refered to [taki0112's](https://github.com/taki0112) [tensorflow version](https://github.com/taki0112/SENet-Tensorflow). I also refered a [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py) from [kuangliu](https://github.com/kuangliu). BTW, I add a dropout layer before the last FullyConnected layer. I attach the training code if you want to train your own data with SE-ResNext archetecuture by yourself. 
 
