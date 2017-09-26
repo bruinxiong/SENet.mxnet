@@ -57,6 +57,7 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 TO BE CONTINUE
 
 SE-Resnet is coming soon.
+
 Gluon version is coming soon.
 
 #Reference
