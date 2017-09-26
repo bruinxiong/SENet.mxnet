@@ -22,17 +22,17 @@ The SE-ResNext 50 is implemented following this table:
 This MXNet implementation is refered to [taki0112's](https://github.com/taki0112) [tensorflow version](https://github.com/taki0112/SENet-Tensorflow). I also refered a [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py) from [kuangliu](https://github.com/kuangliu). BTW, I add a dropout layer before the last FullyConnected layer. I attach the training code if you want to train your own data with SE-ResNext architecture by yourself. 
 
 
-#Requirements
+## Requirements
 
 Install MXNet(0.11.0) on GPUs mechine with NVIDIA CUDA 8.0, and it's better also installed with [cuDNN v6](https://developer.nvidia.com/cudnn) or later version (I'm not testing cuDNN v7).
 
-#Data
+## Data
 
 ImageNet'12 dataset
 
 Imagenet 1000 class dataset with 1.2 million images. Because this dataset is about 120GB, so you have to download by yourself. Sorry for this inconvenience.
 
-#How to Train
+## How to Train
 
 For data preparation, you can refer [my pervious part of densenet](https://github.com/bruinxiong/densenet.mxnet) or you can also visit the repo of [Wei Wu](https://github.com/tornadomeet/ResNet). In his page, there is a very detailed information about how to prepare your data. 
 
@@ -42,7 +42,7 @@ python -u train_se_resnext_w_d.py --data-dir data/imagenet --data-type imagenet 
 
 Maybe you should change batch-size from 256 to 128 due to the memory size of GPU.
 
-#How to retrain
+## How to retrain
 
 When we want to train the large dataset and hope to change learning rate manually, or the machine is suddenly shutdown due to some reason, of course, we definitely hope we can continue to train model with previous trained weights. Then, your can use this cmd:
 
@@ -50,17 +50,17 @@ python -u train_se_renext_w_d.py --data-dir data/imagenet --data-type imagenet -
 
 This means you can retrain your xception model from epoch 50 and change lr=0.001 using 4 GPUs.
 
-#Training curves
+## Training curves
 
 The training procedure is ongoing. So, I hope anyone who are mxnet fun can test this code with me. When I finish, I will update more information about training and validation.
 
-TO BE CONTINUE
+#### TO BE CONTINUE
 
 **SE-Resnet is coming soon**.
 
 **Gluon version is coming soon**.
 
-#Reference
+## Reference
 
 [1]  Jie Hu, Li Shen and Gang Sun. ["Squeeze-and-Excitation Networks"](https://arxiv.org/pdf/1709.01507v1.pdf) 
 
