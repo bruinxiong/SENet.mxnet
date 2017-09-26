@@ -30,9 +30,9 @@ Imagenet 1000 class dataset with 1.2 million images. Because this dataset is abo
 
 For data preparation, you can refer [my pervious part of densenet](https://github.com/bruinxiong/densenet.mxnet) or you can also visit the repo of [Wei Wu](https://github.com/tornadomeet/ResNet). In his page, there is a very detailed information about how to prepare your data. 
 
-When you finised data preparation, please make sure the data locates the same folder of source codes. You also need to change path of path_imgrec in line 65 and line 89 of train_xception.py. Then you can run the training cmd just like this (here, I use 4 gpus for training):
+When you finised data preparation, please make sure the data locates the same folder of source codes. You also need to change path of path_imgrec in line 84 and line 108 of train_xception.py. Then you can run the training cmd just like this (here, I use 4 gpus for training):
 
-python -u train_se_resnext_w_d.py --data-dir data/imagenet --data-type imagenet --depth 50 --batch-size 256 --num-group 64 --drop-out 0.0 --gpus=6,7,8,9
+python -u train_se_resnext_w_d.py --data-dir data/imagenet --data-type imagenet --depth 50 --batch-size 192 --num-group 64 --drop-out 0.0 --gpus=6,7,8,9
 
 Maybe you should change batch-size from 256 to 128 due to the memory size of GPU.
 
@@ -40,7 +40,7 @@ Maybe you should change batch-size from 256 to 128 due to the memory size of GPU
 
 When we want to train the large dataset and hope to change learning rate manually, or the machine is suddenly shutdown due to some reason, of course, we definitely hope we can continue to train model with previous trained weights. Then, your can use this cmd:
 
-python -u train_se_renext_w_d.py --data-dir data/imagenet --data-type imagenet --depth 50 --batch-size 256 --num-group 64 --gpus=0,1,2,3 --model-load-epoch=50 --lr 0.001 --retrain
+python -u train_se_renext_w_d.py --data-dir data/imagenet --data-type imagenet --depth 50 --batch-size 192 --num-group 64 --gpus=0,1,2,3 --model-load-epoch=50 --lr 0.001 --retrain
 
 This means you can retrain your xception model from epoch 50 and change lr=0.001 using 4 GPUs.
 
