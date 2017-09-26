@@ -9,7 +9,7 @@ The author's caffe implementation can be found in his [repo](https://github.com/
 
 This is an illustration of a Squeeze-and-Excitation block.
 
-![](SE_Building_Block.png)
+![](SE_Block.png)
 
 For any given transformation
 
