@@ -56,7 +56,7 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 #### TO BE CONTINUE
 
-**Added SE-Resnet 18, 50, 101, 152**.
+**Added SE-Resnet 18, 50, 101, 152 (Update Sep-27, 2017)**.
 
 **Gluon version is coming soon**.
 
