@@ -1,7 +1,7 @@
 # SENet.mxnet
-A MXNet implementation of Squeeze-and-Excitation Networks (SE-ResNext)
+A MXNet implementation of Squeeze-and-Excitation Networks (SE-ResNext 18, 50, 101, 152)
 
-This is a [MXNet](http://mxnet.io/) implementation of Squeeze-and-Excitation Networks (SE-ResNext) architecture as described in the paper [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507v1.pdf) proposed by [Jie Hu](https://github.com/hujie-frank) et. al. They deployed this SE block in SENet and win the Imagenet 2017 classification task.
+This is a [MXNet](http://mxnet.io/) implementation of Squeeze-and-Excitation Networks (SE-ResNext and SE-Resnet) architecture as described in the paper [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507v1.pdf) proposed by [Jie Hu](https://github.com/hujie-frank) et. al. They deployed this SE block in SENet and win the Imagenet 2017 classification task.
 
 ![](title.png)
 
@@ -56,7 +56,7 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 #### TO BE CONTINUE
 
-**SE-Resnet is coming soon**.
+**Added SE-Resnet 18, 50, 101, 152**.
 
 **Gluon version is coming soon**.
 
