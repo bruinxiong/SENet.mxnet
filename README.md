@@ -54,6 +54,10 @@ This means you can retrain your xception model from epoch 50 and change lr=0.001
 
 The training procedure is ongoing. So, I hope anyone who are mxnet fun can test this code with me. When I finish, I will update more information about training and validation.
 
+**I update the learning curves of SE-Resnext 50 (batchsize=192) trained on vggface datasets with the comparison of Resnext 50 (batchsize=256). 
+
+![](Curves.png)
+
 #### TO BE CONTINUE
 
 **Added SE-Resnet 18, 50, 101, 152 (Updated at Sep-27, 2017)**.
