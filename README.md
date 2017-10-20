@@ -68,7 +68,7 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 We provide the pretrained model of SE-Resnext 50 trained on imagenet 1k dataset. The json file of se-resnext-imagenet-50-0-symbol can be found in master folder. The parameter file can be found in [here](https://drive.google.com/open?id=0B_M7XF_l0CzXOHNybXVWLWZteEE).
 
-#### TO BE CONTINUE
+## TO BE CONTINUE
 
 **Added SE-Resnet 18, 50, 101, 152 (Updated at Sep-27, 2017)**.
 
