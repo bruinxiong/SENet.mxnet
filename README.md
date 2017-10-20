@@ -54,9 +54,17 @@ This means you can retrain your xception model from epoch 50 and change lr=0.001
 
 The training procedure is ongoing. So, I hope anyone who are mxnet fun can test this code with me. When I finish, I will update more information about training and validation.
 
+**I update the learning curves of SE-Resnext 50 (batchsize=192) trained on imagenet datasets (Updated at Oct-20, 2017)**
+
+![](se_resnext_50_imagenet_curves.png)
+
 **I update the learning curves of SE-Resnext 50 (batchsize=192) trained on vggface datasets with the comparison of Resnext 50 (batchsize=256) (Updated at Oct-7, 2017)**. 
 
 ![](Curves.png)
+
+**Pretrained model of SE-Resnext 50 on imagenet 1k dataset (Updated at Oct 20, 2017)**
+
+We provide the pretrained model of SE-Resnext 50 trained on imagenet 1k dataset. The json file of se-resnext-imagenet-50-0-symbol can be found in master folder. The parameter file can be found in [here](https://drive.google.com/open?id=0B_M7XF_l0CzXOHNybXVWLWZteEE).
 
 #### TO BE CONTINUE
 
