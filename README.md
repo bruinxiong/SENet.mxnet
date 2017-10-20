@@ -62,6 +62,8 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 ![](Curves.png)
 
+## Pretrained model
+
 **Pretrained model of SE-Resnext 50 on imagenet 1k dataset (Updated at Oct 20, 2017)**
 
 We provide the pretrained model of SE-Resnext 50 trained on imagenet 1k dataset. The json file of se-resnext-imagenet-50-0-symbol can be found in master folder. The parameter file can be found in [here](https://drive.google.com/open?id=0B_M7XF_l0CzXOHNybXVWLWZteEE).
