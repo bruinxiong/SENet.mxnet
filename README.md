@@ -13,8 +13,8 @@ This is an illustration of a Squeeze-and-Excitation block.
 
 The SE-ResNet module is implemented as followed:
 
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="SE-ResNet_module.png" width = "400"></div>
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="SE-Inception_Block.png" width = "400"></div>
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="SE-ResNet_module.png" width = "380"></div>
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="SE-Inception_Block.png" width = "380"></div>
 
 The SE-ResNext 50 is implemented following this table:
 
