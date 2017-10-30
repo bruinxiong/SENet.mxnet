@@ -1,7 +1,7 @@
 # SENet.mxnet
-A MXNet implementation of Squeeze-and-Excitation Networks (**SE-ResNext 18, 50, 101, 152**)
+A MXNet implementation of Squeeze-and-Excitation Networks (**SE-ResNext 18, 50, 101, 152 SE-ResNet and SE-Inception-v4**)
 
-This is a [MXNet](http://mxnet.io/) implementation of Squeeze-and-Excitation Networks (**SE-ResNext and SE-Resnet**) architecture as described in the paper [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507v1.pdf) proposed by [Jie Hu](https://github.com/hujie-frank) et. al. They deployed this SE block in SENet and win the Imagenet 2017 classification task.
+This is a [MXNet](http://mxnet.io/) implementation of Squeeze-and-Excitation Networks (**SE-ResNext, SE-Resnet and SE-Inception-v4**) architecture as described in the paper [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507v1.pdf) proposed by [Jie Hu](https://github.com/hujie-frank) et. al. They deployed this SE block in SENet and win the Imagenet 2017 classification task.
 
 ![](title.png)
 
@@ -71,6 +71,8 @@ We provide the pretrained model of SE-Resnext 50 trained on imagenet 1k dataset.
 ## TO BE CONTINUE
 
 **Added SE-Resnet 18, 50, 101, 152 (Updated at Sep-27, 2017)**.
+
+**Added SE-inception-v4 (Updated at Oct-30, 2017, Thanks to [Cher Keng Heng](https://github.com/hengck23)) **.
 
 **Gluon version is coming soon**.
 
