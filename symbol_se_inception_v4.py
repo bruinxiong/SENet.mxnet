@@ -69,9 +69,9 @@ def inception_stem(name, data,
     act1 = mx.sym.Activation(data=bn1, act_type='relu', name=('%s_relu1' % name))
 
     return act1
-# Output Shape is 26*26*384
+# Output Shape is 25*25*384
 
-# Input Shape is 26*26*384
+# Input Shape is 25*25*384
 def InceptionA(name, data,
                num_1_1=96,
                num_2_1=96,
@@ -98,9 +98,9 @@ def InceptionA(name, data,
     m = mx.sym.Activation(data=m, act_type='relu', name=('%s_a_relu1' % name))
 
     return m
-# Output Shape is 26*26*384
+# Output Shape is 25*25*384
 
-# Input Shape is 13*13*1024
+# Input Shape is 12*12*1024
 def InceptionB(name, data,
                num_1_1=128,
                num_2_1=384,
@@ -130,9 +130,9 @@ def InceptionB(name, data,
     m = mx.sym.Activation(data=m, act_type='relu', name=('%s_b_relu1' % name))
 
     return m
-# Output Shape is 13*13*1024
+# Output Shape is 12*12*1024
 
-# Input Shape is 6*6*1536
+# Input Shape is 5*5*1536
 def InceptionC(name, data,
                num_1_1=256,
                num_2_1=256,
@@ -164,9 +164,9 @@ def InceptionC(name, data,
     m = mx.sym.Activation(data=m, act_type='relu', name=('%s_c_relu1' % name))
 
     return m
-# Output Shape is 6*6*1536
+# Output Shape is 5*5*1536
 
-# Input Shape is 26*26*384
+# Input Shape is 25*25*384
 def ReductionA(name, data,
                num_2_1=384,
                num_3_1=192, num_3_2=224, num_3_3=256,
@@ -186,9 +186,9 @@ def ReductionA(name, data,
     m = mx.sym.Activation(data=m, act_type='relu', name=('%s_ra_relu1' % name))
 
     return m
-# Output Shape is 13*13*1024
+# Output Shape is 12*12*1024
 
-# Input Shape is 13*13*1024
+# Input Shape is 12*12*1024
 def ReductionB(name, data,
                num_2_1=192, num_2_2=192,
                num_3_1=256, num_3_2=256, num_3_3=320, num_3_4=320,
@@ -210,7 +210,7 @@ def ReductionB(name, data,
     m = mx.sym.Activation(data=m, act_type='relu', name=('%s_rb_relu1' % name))
 
     return m
-# Output Shape is 6*6*1536
+# Output Shape is 5*5*1536
 
 
 # Squeeze and excitation block
@@ -383,7 +383,7 @@ def get_symbol(ratio, num_classes=1000):
 
     # stage Average Pooling
     #pool = mx.sym.Pooling(data=in3c, kernel=(8, 8), stride=(1, 1), pool_type="avg", name="global_pool")
-    pool = mx.sym.Pooling(data=in3c, global_pool=True, kernel=(6, 6), stride=(1, 1), pad=(0, 0), pool_type="avg", name="global_pool")
+    pool = mx.sym.Pooling(data=in3c, global_pool=True, kernel=(5, 5), stride=(1, 1), pad=(0, 0), pool_type="avg", name="global_pool")
 
     # stage Dropout
     #dropout = mx.sym.Dropout(data=pool, p=0.5)        #modified for vggface data
