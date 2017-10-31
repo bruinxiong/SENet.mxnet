@@ -87,3 +87,5 @@ Note, the inception-v4 backbone is modified from original version (299x299) to d
 [2]  [Tensorflow implementation](https://github.com/taki0112/SENet-Tensorflow) of SENet from [taki0112's](https://github.com/taki0112)
 
 [3]  [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py)
+
+[4]  [Inception V4](https://github.com/Trangle/mxnet-inception-v4) from [Trangle](https://github.com/Trangle)
