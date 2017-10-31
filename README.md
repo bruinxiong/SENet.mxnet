@@ -21,7 +21,7 @@ The SE-ResNext 50 is implemented following this table:
 
 ![](SE-ResNext_50.png)
 
-This MXNet implementation is refered to [taki0112's](https://github.com/taki0112) [tensorflow version](https://github.com/taki0112/SENet-Tensorflow). I also refered a [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py) from [kuangliu](https://github.com/kuangliu). BTW, I add a dropout layer before the last FullyConnected layer. I attach the training code if you want to train your own data with SE-ResNext architecture by yourself. 
+This MXNet implementation is refered to [taki0112's](https://github.com/taki0112) [tensorflow version](https://github.com/taki0112/SENet-Tensorflow). I also refered a [PyTorch implementation](https://github.com/kuangliu/pytorch-cifar/blob/master/models/senet.py) from [kuangliu](https://github.com/kuangliu). BTW, I add a dropout layer before the last FullyConnected layer. For Inception v4, I refers the [MXnet implementation](https://github.com/Trangle/mxnet-inception-v4) from [Trangle](https://github.com/Trangle). Finally, I attach the training code if you want to train your own data with SE-ResNext architecture by yourself. 
 
 
 ## Requirements
