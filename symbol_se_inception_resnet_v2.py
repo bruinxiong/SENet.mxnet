@@ -93,7 +93,8 @@ def Inception_Resnet_A(name, data,
 
     conv = Conv(data=m, num_filter=cat, name=('%s_a_linear_conv' % name), withRelu=False, bn_mom=bn_mom, workspace=256)
     if scaleResidual:
-        conv *= 0.1
+        conv = conv.__mul__(0.1)  # for new version > 0.11.0
+#         conv *= 0.1     # for old version < 0.11.0
 
     out = init + conv
     bn = mx.sym.BatchNorm(data=out, fix_gamma=False, eps=2e-5, name=('%s_a_bn1' % name))
@@ -121,7 +122,8 @@ def Inception_Resnet_B(name, data,
 
     conv = Conv(data=m, num_filter=cat, name=('%s_b_linear_conv' % name), withRelu=False, bn_mom=bn_mom, workspace=256)
     if scaleResidual:
-        conv *= 0.1
+        conv = conv.__mul__(0.1)  # for new version > 0.11.0
+#         conv *= 0.1     # for old version < 0.11.0
 
     out = init + conv
     bn = mx.sym.BatchNorm(data=out, fix_gamma=False, eps=2e-5, name=('%s_b_bn1' % name))
@@ -149,7 +151,8 @@ def Inception_Resnet_C(name, data,
 
     conv = Conv(data=m, num_filter=cat, name=('%s_c_linear_conv' % name), withRelu=False, bn_mom=bn_mom,workspace=256)
     if scaleResidual:
-        conv *= 0.1
+        conv = conv.__mul__(0.1)  # for new version > 0.11.0
+#         conv *= 0.1     # for old version < 0.11.0
 
     out = init + conv
     bn = mx.sym.BatchNorm(data=out, fix_gamma=False, eps=2e-5, name=('%s_c_bn1' % name))
@@ -313,7 +316,7 @@ def get_symbol(ratio, num_classes=1000, scale=True):
                                      bn_mom)
 
     # stage 5 x Inception-Resnet-A
-    num_1_1 = 32,
+    num_1_1 = 32
     (num_2_1, num_2_2) = (32, 32)
     (num_3_1, num_3_2, num_3_3) = (32, 48, 64)
     cat = 384
@@ -336,7 +339,7 @@ def get_symbol(ratio, num_classes=1000, scale=True):
                       bn_mom)
 
     # stage 10 x Inception-Resnet-B
-    num_1_1 = 192,
+    num_1_1 = 192
     (num_2_1, num_2_2, num_2_3) = (128, 160, 192)
     cat = 1152
 
@@ -359,7 +362,7 @@ def get_symbol(ratio, num_classes=1000, scale=True):
                        bn_mom)
 
     # stage 5 x Inception-Resnet-C
-    num_1_1 = 192,
+    num_1_1 = 192
     (num_2_1, num_2_2, num_2_3) = (192, 224, 256)
     cat = 2144
 
