@@ -77,7 +77,7 @@ We provide the pretrained model of SE-Resnext 50 trained on imagenet 1k dataset.
 
 **Added SE-inception-v4 (Updated at Oct-30, 2017, Thanks to [Cher Keng Heng](https://github.com/hengck23))**.
 
-**Added SE-inception-resnet-v2 (Updated at Nov-1, 2017, it should be tested later. If it has some problem, please let me know.)**.
+**Added SE-inception-resnet-v2 (Updated at Nov-5, 2017)**.
 
 Note, the backbone of inception-v4 or inception-resnet-v2 is modified from original version (299x299) to different version (224x224). If you want to deploy original one, you can easily modify to what you want.
 
